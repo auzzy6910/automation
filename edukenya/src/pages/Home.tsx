@@ -4,27 +4,27 @@ import { portfolio } from "../data/portfolio";
 
 const services = [
   {
-    title: "Skin & Beauty Retouch",
-    desc: "Natural, high-end frequency-separation retouching that keeps texture intact.",
+    title: "CV & Resume Writing",
+    desc: "ATS-friendly resumes and cover letters that get interviews — rewritten, restructured, and typeset.",
   },
   {
-    title: "Color Grading",
-    desc: "Signature cinematic looks tailored to your brand or mood board.",
+    title: "Thesis & Dissertation",
+    desc: "University-compliant formatting: APA/Harvard/MLA, TOC, captions, pagination, references.",
   },
   {
-    title: "Wedding Galleries",
-    desc: "Consistent, timeless edits across hundreds of images — delivered fast.",
+    title: "Proofreading & Editing",
+    desc: "Grammar, style, and clarity edits — tracked changes so you can see every suggestion.",
   },
   {
-    title: "Product & E-commerce",
-    desc: "Clean backgrounds, shadows, and brand-matched tones for catalog-ready shots.",
+    title: "Business & Proposals",
+    desc: "Pitch decks, proposals, annual reports, and long-form documents with polished typesetting.",
   },
 ];
 
 const stats = [
-  { k: "250+", v: "Clients served" },
-  { k: "30k+", v: "Images retouched" },
-  { k: "48 hr", v: "Typical turnaround" },
+  { k: "500+", v: "Documents edited" },
+  { k: "98%", v: "On-time delivery" },
+  { k: "24 hr", v: "Typical turnaround" },
   { k: "9 yrs", v: "Of experience" },
 ];
 
@@ -38,16 +38,16 @@ export default function Home() {
       <section className="relative overflow-hidden pt-28 sm:pt-36">
         <div className="container-edu grid items-center gap-14 lg:grid-cols-2">
           <div>
-            <div className="eyebrow mb-4">Photo editing · Nairobi</div>
+            <div className="eyebrow mb-4">Document editing · Nairobi</div>
             <h1 className="text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">
-              Photographs,
+              Documents,
               <br />
-              <span className="text-accent">refined</span> into art.
+              <span className="text-accent">refined</span> for every reader.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-neutral-300">
-              EduKenya is a boutique photo editing studio helping portrait,
-              wedding, and brand photographers deliver imagery that feels
-              intentional, timeless, and cinematic.
+              EduKenya is a document editing studio helping students,
+              professionals, and brands deliver CVs, theses, proposals, and
+              reports that are clean, credible, and ready for their moment.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link to="/portfolio" className="btn-primary">
@@ -72,13 +72,17 @@ export default function Home() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-2">
-              {["Portraits", "Weddings", "Fashion", "Product", "Landscape"].map(
-                (t) => (
-                  <span key={t} className="chip">
-                    {t}
-                  </span>
-                ),
-              )}
+              {[
+                "CVs & Resumes",
+                "Theses & Dissertations",
+                "Proposals",
+                "Business Docs",
+                "Proofreading",
+              ].map((t) => (
+                <span key={t} className="chip">
+                  {t}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -100,11 +104,11 @@ export default function Home() {
       {/* LOGO STRIP */}
       <section className="container-edu mt-24">
         <div className="glass flex flex-wrap items-center justify-around gap-6 px-8 py-6 text-sm text-neutral-400">
-          <span className="font-display text-lg">Zuri Swim</span>
-          <span className="font-display text-lg">Kahawa Roasters</span>
-          <span className="font-display text-lg">House of Jadé</span>
-          <span className="font-display text-lg">Nairobi Stories</span>
-          <span className="font-display text-lg">Mara Weddings</span>
+          <span className="font-display text-lg">Savanna Foods</span>
+          <span className="font-display text-lg">Habari Media</span>
+          <span className="font-display text-lg">Uhuru Youth NGO</span>
+          <span className="font-display text-lg">Mwangi Coffee Co.</span>
+          <span className="font-display text-lg">Nairobi University Guild</span>
         </div>
       </section>
 
@@ -161,8 +165,9 @@ export default function Home() {
           <div className="eyebrow">What I do</div>
           <h2 className="mt-3 text-4xl sm:text-5xl">Editing services</h2>
           <p className="mt-4 max-w-2xl text-neutral-300">
-            Every image is hand-edited with care. Choose a single session edit
-            or a consistent package across an entire shoot.
+            Every document is hand-edited with care — no AI paste jobs, no
+            rushed batches. Choose a single edit or a package across a larger
+            project.
           </p>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -212,11 +217,11 @@ export default function Home() {
               <div>
                 <div className="eyebrow">Let's work together</div>
                 <h2 className="mt-3 text-4xl sm:text-5xl">
-                  Ready to make your images unforgettable?
+                  Have a document you need to shine?
                 </h2>
                 <p className="mt-4 max-w-xl text-neutral-300">
-                  Send over a few sample images and what you're going for.
-                  You'll get a tailored quote within 24 hours.
+                  Send your draft and what you're aiming for. You'll get a
+                  tailored quote and timeline within 24 hours.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 lg:justify-end">

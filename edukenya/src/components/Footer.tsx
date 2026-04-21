@@ -14,9 +14,9 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-4 max-w-md text-sm text-neutral-400">
-            Fine-art photo editing, retouching, and color grading for
-            portraits, weddings, fashion, and brands. Based in Nairobi, working
-            with clients around the world.
+            Document editing, formatting, and proofreading for CVs, theses,
+            proposals, and business documents. Based in Nairobi, working with
+            clients around the world.
           </p>
         </div>
 
@@ -60,11 +60,11 @@ export default function Footer() {
             <li>Nairobi, Kenya</li>
             <li>
               <a href="#" className="hover:text-accent">
-                Instagram
+                LinkedIn
               </a>
               <span className="mx-2 text-neutral-600">·</span>
               <a href="#" className="hover:text-accent">
-                Behance
+                WhatsApp
               </a>
             </li>
           </ul>

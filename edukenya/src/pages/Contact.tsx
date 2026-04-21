@@ -7,8 +7,8 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    projectType: "Portraits",
-    imageCount: "1-10",
+    projectType: "CV / Resume",
+    wordCount: "under 1,000",
     deadline: "",
     message: "",
   });
@@ -30,10 +30,10 @@ export default function Contact() {
       <div className="container-edu grid gap-12 lg:grid-cols-[1fr,1.1fr]">
         <div>
           <div className="eyebrow">Contact</div>
-          <h1 className="mt-3 text-4xl sm:text-6xl">Let's talk about your shoot.</h1>
+          <h1 className="mt-3 text-4xl sm:text-6xl">Let's polish your document.</h1>
           <p className="mt-4 max-w-md text-neutral-300">
-            Tell me a bit about your project and I'll reply within 24 hours
-            with a tailored plan and quote.
+            Send a few details about your project and I'll reply within 24
+            hours with a tailored plan and quote.
           </p>
 
           <div className="mt-10 space-y-6 text-sm text-neutral-300">
@@ -55,10 +55,10 @@ export default function Contact() {
               <div className="eyebrow">Follow</div>
               <div className="mt-2 flex gap-4">
                 <a href="#" className="hover:text-accent">
-                  Instagram
+                  LinkedIn
                 </a>
                 <a href="#" className="hover:text-accent">
-                  Behance
+                  Instagram
                 </a>
                 <a href="#" className="hover:text-accent">
                   WhatsApp
@@ -82,8 +82,8 @@ export default function Contact() {
                   setForm({
                     name: "",
                     email: "",
-                    projectType: "Portraits",
-                    imageCount: "1-10",
+                    projectType: "CV / Resume",
+                    wordCount: "under 1,000",
                     deadline: "",
                     message: "",
                   });
@@ -101,7 +101,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={update("name")}
                   className="input"
-                  placeholder="Jane Photographer"
+                  placeholder="Jane Student"
                 />
               </Field>
               <Field label="Email">
@@ -111,7 +111,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={update("email")}
                   className="input"
-                  placeholder="you@studio.com"
+                  placeholder="you@example.com"
                 />
               </Field>
 
@@ -122,25 +122,28 @@ export default function Contact() {
                     onChange={update("projectType")}
                     className="input"
                   >
-                    <option>Portraits</option>
-                    <option>Weddings</option>
-                    <option>Fashion</option>
-                    <option>Product</option>
-                    <option>Landscape</option>
+                    <option>CV / Resume</option>
+                    <option>Cover Letter</option>
+                    <option>Thesis / Dissertation</option>
+                    <option>Proofreading</option>
+                    <option>Business / Proposal</option>
+                    <option>Annual Report</option>
+                    <option>Typing Services</option>
+                    <option>PDF ↔ Word Conversion</option>
                     <option>Other</option>
                   </select>
                 </Field>
-                <Field label="Number of images">
+                <Field label="Approximate word count">
                   <select
-                    value={form.imageCount}
-                    onChange={update("imageCount")}
+                    value={form.wordCount}
+                    onChange={update("wordCount")}
                     className="input"
                   >
-                    <option>1-10</option>
-                    <option>10-50</option>
-                    <option>50-150</option>
-                    <option>150-300</option>
-                    <option>300+</option>
+                    <option>under 1,000</option>
+                    <option>1,000 – 5,000</option>
+                    <option>5,000 – 15,000</option>
+                    <option>15,000 – 50,000</option>
+                    <option>50,000+</option>
                   </select>
                 </Field>
               </div>
@@ -161,7 +164,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={update("message")}
                   className="input resize-none"
-                  placeholder="A few sentences on the shoot, the look you're going for, and any references."
+                  placeholder="A few sentences on the document, what you need done, and any style/template requirements."
                 />
               </Field>
 

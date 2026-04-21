@@ -1,21 +1,21 @@
 const skills = [
-  "Adobe Photoshop",
-  "Adobe Lightroom",
-  "Capture One",
-  "DaVinci Resolve",
-  "Frequency separation",
-  "Luminosity masks",
-  "Compositing",
-  "Color theory",
+  "Microsoft Word",
+  "Google Docs",
+  "Adobe InDesign",
+  "LaTeX",
+  "PowerPoint & Keynote",
+  "APA / MLA / Harvard",
+  "Grammarly Premium",
+  "Typesetting",
 ];
 
 const clients = [
-  "Zuri Swim",
-  "Kahawa Roasters",
-  "House of Jadé",
-  "Nairobi Stories",
-  "Mara Weddings",
-  "Safari Collective",
+  "Savanna Foods",
+  "Habari Media",
+  "Uhuru Youth NGO",
+  "Mwangi Coffee Co.",
+  "Mara Consulting",
+  "Nairobi University Guild",
 ];
 
 export default function About() {
@@ -28,21 +28,21 @@ export default function About() {
             Hi, I'm <span className="text-accent">Edu</span>.
           </h1>
           <p className="mt-6 text-lg text-neutral-300">
-            I'm a Nairobi-based photo editor and retoucher with nearly a decade
-            of experience working alongside portrait and wedding photographers,
-            fashion houses, and independent brands across East Africa and
-            beyond.
+            I'm a Nairobi-based editor and document designer with nearly a
+            decade of experience shaping CVs, theses, proposals, and business
+            documents for students, professionals, and organizations across
+            East Africa and beyond.
           </p>
           <p className="mt-4 text-neutral-400">
-            My approach is simple: honor the moment, elevate the craft.
-            Every image is edited by hand — no stacked AI presets, no rushed
-            batch work. Skin stays skin. Light stays true. The story leads.
+            My approach is simple: honor the voice, elevate the craft. Every
+            document is hand-edited — no AI paste jobs, no batch templates.
+            Your tone stays yours. The structure just works harder.
           </p>
           <p className="mt-4 text-neutral-400">
-            I care deeply about the trust that goes into a shoot — yours, and
-            your clients'. Everything I touch is delivered through a private,
-            password-protected client gallery so you can share previews with
-            confidence.
+            I care deeply about the trust that comes with sending me your
+            draft — your thesis, your pitch, your resume. Everything I touch
+            is delivered through a private, password-protected client link so
+            you can share previews with confidence.
           </p>
 
           <div className="mt-10">
@@ -71,18 +71,18 @@ export default function About() {
         <div className="relative">
           <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-accent/20 via-transparent to-purple-500/10 blur-2xl" />
           <img
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80"
+            src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80"
             alt="Edu at work"
             className="aspect-[4/5] w-full rounded-2xl border border-white/10 object-cover shadow-glow"
           />
           <div className="glass mt-6 p-6">
             <div className="text-sm text-neutral-300">
-              "Working with Edu has completely changed how my wedding galleries
-              feel. My couples keep saying they look like film — timeless and
-              warm. I don't deliver without him now."
+              "Edu turned my messy 180-page draft into a university-ready
+              thesis in under two weeks. The formatting, the references, the
+              tone — flawless. I'll never submit anything without him again."
             </div>
             <div className="mt-3 text-xs uppercase tracking-widest text-accent">
-              — Naomi W., Mara Weddings
+              — Kamau M., MSc. candidate
             </div>
           </div>
         </div>

@@ -1,9 +1,10 @@
 export type Category =
-  | "Portraits"
-  | "Weddings"
-  | "Fashion"
-  | "Product"
-  | "Landscape";
+  | "CV & Resume"
+  | "Thesis & Dissertation"
+  | "Business"
+  | "Proposal"
+  | "Report"
+  | "Academic";
 
 export type PortfolioItem = {
   id: string;
@@ -21,100 +22,101 @@ const UNSPLASH = (id: string, w = 1400) =>
 
 export const portfolio: PortfolioItem[] = [
   {
-    id: "amara-studio",
-    title: "Amara — Studio Portrait",
-    client: "Amara M.",
-    category: "Portraits",
-    tags: ["skin retouch", "color grade", "dodge & burn"],
-    before: UNSPLASH("photo-1524504388940-b1c1722653e1"),
-    after: UNSPLASH("photo-1502767089025-6572583495f4"),
+    id: "achieng-cv",
+    title: "Achieng — Executive CV",
+    client: "Achieng O.",
+    category: "CV & Resume",
+    tags: ["rewrite", "ATS-friendly", "layout"],
+    before: UNSPLASH("photo-1455390582262-044cdead277a"),
+    after: UNSPLASH("photo-1586281380349-632531db7ed4"),
     description:
-      "Editorial studio portrait with frequency-separation skin retouching and a warm, filmic color grade.",
+      "Two-page executive CV rewritten and redesigned from a plain Word doc — ATS-friendly structure, impact-led bullet points, and a clean typographic hierarchy.",
   },
   {
-    id: "karibu-wedding",
-    title: "Karibu — Wedding Day",
-    client: "Grace & Daniel",
-    category: "Weddings",
-    tags: ["highlight recovery", "warm tones", "skin cleanup"],
-    before: UNSPLASH("photo-1519741497674-611481863552"),
-    after: UNSPLASH("photo-1511795409834-ef04bbd61622"),
+    id: "kamau-thesis",
+    title: "Kamau — Master's Thesis",
+    client: "Kamau M.",
+    category: "Thesis & Dissertation",
+    tags: ["APA 7th", "TOC", "captions", "pagination"],
+    before: UNSPLASH("photo-1434030216411-0b793f4b4173"),
+    after: UNSPLASH("photo-1568667256549-094345857637"),
     description:
-      "Outdoor ceremony in soft golden hour light — recovered highlights, enriched skin tones, and a painterly background.",
+      "180-page Master's thesis formatted to university template — APA 7th references, automated table of contents, figure/table captions, page numbering, and consistent heading styles.",
   },
   {
-    id: "savanna-fashion",
-    title: "Savanna — Fashion Editorial",
-    client: "House of Zuri",
-    category: "Fashion",
-    tags: ["fabric detail", "cinematic grade", "liquify"],
-    before: UNSPLASH("photo-1496747611176-843222e1e57c"),
-    after: UNSPLASH("photo-1469334031218-e382a71b716b"),
+    id: "savanna-pitch",
+    title: "Savanna — Investor Pitch Deck",
+    client: "Savanna Foods",
+    category: "Business",
+    tags: ["layout", "brand fonts", "charts"],
+    before: UNSPLASH("photo-1450101499163-c8848c66ca85"),
+    after: UNSPLASH("photo-1553729459-efe14ef6055d"),
     description:
-      "High-fashion editorial with cinematic teal-and-gold grade, sharpened fabric detail, and subtle shape refinement.",
+      "Rough pitch content transformed into a polished, brand-consistent deck with clean charts and a tight narrative flow.",
   },
   {
-    id: "kahawa-product",
-    title: "Kahawa — Product Shoot",
-    client: "Kahawa Roasters",
-    category: "Product",
-    tags: ["background clean", "shadow", "color match"],
-    before: UNSPLASH("photo-1461023058943-07fcbe16d735"),
-    after: UNSPLASH("photo-1447933601403-0c6688de566e"),
+    id: "uhuru-proposal",
+    title: "Uhuru — Grant Proposal",
+    client: "Uhuru Youth NGO",
+    category: "Proposal",
+    tags: ["structure", "proofread", "template"],
+    before: UNSPLASH("photo-1519455953755-af066f52f1a6"),
+    after: UNSPLASH("photo-1454165804606-c3d57bc86b40"),
     description:
-      "Coffee packaging hero shot — composited onto a clean seamless, added natural contact shadow, brand-matched tones.",
+      "USAID-style grant proposal restructured for clarity — sections aligned to the funder's template, proofread end-to-end, and typeset for easy reviewer scanning.",
   },
   {
-    id: "rift-valley",
-    title: "Rift Valley — Landscape",
-    client: "Personal",
-    category: "Landscape",
-    tags: ["sky replace", "dehaze", "luminosity masks"],
-    before: UNSPLASH("photo-1500530855697-b586d89ba3ee"),
-    after: UNSPLASH("photo-1506905925346-21bda4d32df4"),
+    id: "habari-report",
+    title: "Habari — Annual Report",
+    client: "Habari Media",
+    category: "Report",
+    tags: ["long-form layout", "typesetting", "infographics"],
+    before: UNSPLASH("photo-1486312338219-ce68d2c6f44d"),
+    after: UNSPLASH("photo-1507679799987-c73779587ccf"),
     description:
-      "Dramatic rift valley landscape — luminosity-masked contrast, dehaze, and a subtle sky replacement.",
+      "64-page annual report typeset from scratch — column grids, callouts, custom infographics, and a magazine-grade feel.",
   },
   {
-    id: "nia-beauty",
-    title: "Nia — Beauty Close-up",
-    client: "Nia K.",
-    category: "Portraits",
-    tags: ["beauty retouch", "eye pop", "color grade"],
-    before: UNSPLASH("photo-1544005313-94ddf0286df2"),
-    after: UNSPLASH("photo-1531123897727-8f129e1688ce"),
+    id: "nia-journal",
+    title: "Nia — Journal Submission",
+    client: "Nia K. (PhD)",
+    category: "Academic",
+    tags: ["journal template", "LaTeX-to-Word", "citations"],
+    before: UNSPLASH("photo-1519682337058-a94d519337bc"),
+    after: UNSPLASH("photo-1455390582262-044cdead277a"),
     description:
-      "Beauty close-up with natural skin, enhanced eye clarity, and a soft cinematic grade.",
+      "Academic paper converted to the target journal's template — citations reformatted, figure resolution upgraded, and a detailed compliance checklist attached.",
   },
   {
-    id: "boda-street",
-    title: "Boda — Street Portrait",
-    client: "Nairobi Stories",
-    category: "Portraits",
-    tags: ["moody grade", "vignette", "detail recovery"],
-    before: UNSPLASH("photo-1506794778202-cad84cf45f1d"),
-    after: UNSPLASH("photo-1507003211169-0a1dd7228f2d"),
+    id: "zuri-resume",
+    title: "Zuri — Designer Resume",
+    client: "Zuri N.",
+    category: "CV & Resume",
+    tags: ["design resume", "portfolio link", "typography"],
+    before: UNSPLASH("photo-1517842645767-c639042777db"),
+    after: UNSPLASH("photo-1586282391129-76a6df230234"),
     description:
-      "Candid street portrait with moody, desaturated grade and recovered shadow detail.",
+      "Designer-focused one-pager with a confident type system, subtle color accent, and a link-ready digital portfolio footer.",
   },
   {
-    id: "zuri-campaign",
-    title: "Zuri — Brand Campaign",
-    client: "Zuri Swim",
-    category: "Fashion",
-    tags: ["composite", "skin", "grade"],
-    before: UNSPLASH("photo-1515886657613-9f3515b0c78f"),
-    after: UNSPLASH("photo-1492106087820-71f1a00d2b11"),
+    id: "mwangi-proposal",
+    title: "Mwangi — Business Plan",
+    client: "Mwangi Coffee Co.",
+    category: "Business",
+    tags: ["financials", "tables", "brand polish"],
+    before: UNSPLASH("photo-1518458028785-8fbcd101ebb9"),
+    after: UNSPLASH("photo-1553729459-efe14ef6055d"),
     description:
-      "Swimwear campaign — composited locations, refined skin, and a crisp brand-aligned color palette.",
+      "40-page business plan with polished financial tables, 3-year projections, and a brand-consistent cover and section dividers.",
   },
 ];
 
 export const categories: ("All" | Category)[] = [
   "All",
-  "Portraits",
-  "Weddings",
-  "Fashion",
-  "Product",
-  "Landscape",
+  "CV & Resume",
+  "Thesis & Dissertation",
+  "Business",
+  "Proposal",
+  "Report",
+  "Academic",
 ];

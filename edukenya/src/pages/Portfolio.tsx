@@ -22,8 +22,8 @@ export default function Portfolio() {
         <div className="eyebrow">Portfolio</div>
         <h1 className="mt-3 text-4xl sm:text-6xl">Selected client work</h1>
         <p className="mt-4 max-w-2xl text-neutral-300">
-          A curated selection of recent edits across portraits, weddings,
-          fashion, product, and landscape. Tap any image to open a full
+          A curated selection of recent edits across CVs, theses, proposals,
+          reports, and business documents. Tap any card to open a full
           before &amp; after comparison.
         </p>
 
